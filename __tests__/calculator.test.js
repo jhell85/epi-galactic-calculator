@@ -12,13 +12,15 @@ describe( "Age Class tests", () => {
   let stillThirtyNine  = new Age(fortyYearsAgo,todayMonth,tomorrowDate);
   stillThirtyNine.getAge();
   describe("Age class tests", () => {
-    test("testing getAge() method that it created the constructor for  40 for todays date forty years ago", () => {
+    test("testing getAge() method that it created the constructor earthAge to be 40 for todays date", () => {
       expect(forty.earthAge).toEqual(40);
     });
-    test("testing getAge() method that it should return 39 for tomorrows date forty years ago", () => {
-
+    test("testing getAge() method that it created the constructor earthAge to be 39 for tomorrows date", () => {
       expect(stillThirtyNine.earthAge).toEqual(39);
     });
+    test("testing getMercurianYears() method, that it created the constructor mercurianAge to be 166")
+    forty.getMercurianYears()
+    expect(forty.mercurianAge).toEqual(166) 
   });
   // describe("SolarAge Class tests", () => {
   //   let 
