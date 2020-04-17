@@ -53,3 +53,28 @@ The program will return the users age in Mercurian years | '30' | '124.5 Mercuri
 The program will return the users age in Venusian years | '30' | '48.7 Venusian years' |
 The program will return the users age in Martian years | '30' | '15.9 Martian years' |
 The program will return the users age in Jovian years | '30' | '2.52 Jovian years' |
+
+## Support 
+
+_The software is provided as is. It might work as expected - or not. Use at your own risk._
+
+
+## Built With
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Simple Scaffolding
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Used for interactivity in the page
+* [jQuery](https://jquery.com/) - Used to interact with the DOM
+* [Bootstrap 4.4](https://getbootstrap.com/) - Used for styling
+* [webpack](https://webpack.js.org/)
+* [Sass](https://sass-lang.com/)
+* [ESLint](https://eslint.org/)
+* [Node.js](https://nodejs.org/en/)
+* [Uglifyjs](https://www.uglifyjs.net/)
+* [Jest](https://jestjs.io/)
+
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+Copyright (c) 2020 **_Josh Hellman_**
