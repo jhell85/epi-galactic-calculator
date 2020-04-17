@@ -49,3 +49,7 @@ npm run start
 
 Behavior | Input | Output
 :---------|:------:|:------:
+The program will return the users age in Mercurian years | '30' | '124.5 Mercurian years' |
+The program will return the users age in Venusian years | '30' | '48.7 Venusian years' |
+The program will return the users age in Martian years | '30' | '15.9 Martian years' |
+The program will return the users age in Jovian years | '30' | '2.52 Jovian years' |
