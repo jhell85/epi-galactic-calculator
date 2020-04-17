@@ -15,6 +15,8 @@ export class Age {
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
       age = age - 1;
     }
-    return age;
+     this.earthAge = age;
   }
+
+
 }
