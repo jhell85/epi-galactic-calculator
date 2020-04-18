@@ -17,6 +17,8 @@ export class Age {
     }
      this.earthAge = age;
   }
-
+  getMercurianYears(){
+    this.mercurianAge = Math.floor(this.earthAge / .24);
+  }
 
 }
