@@ -24,10 +24,10 @@ cd desktop
  cd ~/Desktop
  ```
 
- 3. in terminal type '_git clone https://github.com/jhell85/glalactic-age-calculator.git_ '
+ 3. in terminal type '_git clone https://github.com/jhell85/epi-galactic-calculator.git '
 
 ```sh
-git clone https://github.com/jhell85/glalactic-age-calculator.git
+git clone https://github.com/jhell85/epi-galactic-calculator.git
 ```
 
 4. navigate to the new folder that was created on your desk
