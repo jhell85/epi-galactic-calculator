@@ -26,5 +26,8 @@ export class Age {
   getMartianYears(){
     this.martianAge = Math.floor(this.earthAge / 1.88);
   }
+  getJovianYears(){
+    this.jovianAge = Math.floor(this.earthAge / 11.86);
+  }
 
 }
