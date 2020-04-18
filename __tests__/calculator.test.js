@@ -38,8 +38,20 @@ describe("Age Class tests", () => {
     expect(forty.lifeExpectancy).toEqual(78);
   });
   test("testing getLifeExpectancy() method, that the lifeExpectancy constructor is is 68 if the smoker constructor is true", () => {
-    forty.smoker = false;
+    forty.smoker = true;
     forty.getLifeExpectancy();
     expect(forty.lifeExpectancy).toEqual(68);
+  });
+  test("testing getLifeExpectancy() method, that the yearsLeft constructor is is 28, the olderThenLifeExpectancy constructor is false", () => {
+    expect(forty.yearsLeft).toEqual(28);
+    expect(forty.olderThenLifeExpectancy).toBeFalsy()
+  });
+  test("testing getLifeExpectancy() method, that the yearsLeft constructor is is 22, the olderThenLifeExpectancy constructor is true", () => {
+    let oneHundredYearsAgo = fortyYearsAgo -60;
+    let oneHundred = new Age(oneHundredYearsAgo, todayMonth, todayDate, false);
+    oneHundred.getAge();
+    oneHundred.getLifeExpectancy()
+    expect(oneHundred.yearsLeft).toEqual(22);
+    expect(oneHundred.olderThenLifeExpectancy).toBeTruthy()
   });
 });

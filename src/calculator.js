@@ -18,6 +18,7 @@ export class Age {
   }
   getMercurianYears() {
     this.mercurianAge = Math.floor(this.earthAge / 0.24);
+
   }
   getVenusianYears() {
     this.venusianAge = Math.floor(this.earthAge / 0.62);
@@ -34,5 +35,12 @@ export class Age {
     } else {
       this.lifeExpectancy = 78;
     }
+    let yearsLeft = this.lifeExpectancy - this.earthAge;
+    if (yearsLeft >= 0){
+      this.olderThenLifeExpectancy =  false;
+    } else {
+      this.olderThenLifeExpectancy = true;
+    }
+    this.yearsLeft = Math.abs(yearsLeft);
   }
 }
