@@ -29,4 +29,8 @@ describe("Age Class tests", () => {
     forty.getMartianYears();
     expect(forty.martianAge).toEqual(21);
   });
+  test("testing getJovianYears() method, that it created the constructor JovianAge to be 3", () => {
+    forty.getJovianYears();
+    expect(forty.jovianAge).toEqual(3);
+  });
 });
