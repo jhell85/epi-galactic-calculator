@@ -34,7 +34,12 @@ describe("Age Class tests", () => {
     expect(forty.jovianAge).toEqual(3);
   });
   test("testing getLifeExpectancy() method, that the lifeExpectancy constructor is is 78 if the smoker constructor is false", () => {
-    forty.getlifeExpectancy();
+    forty.getLifeExpectancy();
     expect(forty.lifeExpectancy).toEqual(78);
+  });
+  test("testing getLifeExpectancy() method, that the lifeExpectancy constructor is is 68 if the smoker constructor is true", () => {
+    forty.smoker = false;
+    forty.getLifeExpectancy();
+    expect(forty.lifeExpectancy).toEqual(68);
   });
 });
