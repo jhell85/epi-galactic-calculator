@@ -23,5 +23,8 @@ export class Age {
   getVenusianYears(){
     this.venusianAge =  Math.floor(this.earthAge / .62);
   }
+  getMartianYears(){
+    this.martianAge = Math.floor(this.earthAge / 1.88);
+  }
 
 }
