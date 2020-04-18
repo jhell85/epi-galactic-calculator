@@ -18,13 +18,10 @@ describe( "Age Class tests", () => {
     test("testing getAge() method that it created the constructor earthAge to be 39 for tomorrows date", () => {
       expect(stillThirtyNine.earthAge).toEqual(39);
     });
-    test("testing getMercurianYears() method, that it created the constructor mercurianAge to be 166")
+    test("testing getMercurianYears() method, that it created the constructor mercurianAge to be 166", () => {
     forty.getMercurianYears()
     expect(forty.mercurianAge).toEqual(166) 
+    });
   });
-  // describe("SolarAge Class tests", () => {
-  //   let 
-  // })
-
-
+  
 });
