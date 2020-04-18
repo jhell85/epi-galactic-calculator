@@ -7,7 +7,7 @@ describe("Age Class tests", () => {
   let tomorrowDate = todayDate + 1;
   let fortyYearsAgo = today.getFullYear() - 40;
   let forty = new Age(fortyYearsAgo, todayMonth, todayDate);
-  let stillThirtyNine = new Age(fortyYearsAgo, todayMonth, tomorrowDate);
+  let stillThirtyNine = new Age(fortyYearsAgo, todayMonth, tomorrowDate, false);
 
   test("testing getAge() method that it created the constructor earthAge to be 40 for todays date", () => {
     forty.getAge();
@@ -32,5 +32,9 @@ describe("Age Class tests", () => {
   test("testing getJovianYears() method, that it created the constructor JovianAge to be 3", () => {
     forty.getJovianYears();
     expect(forty.jovianAge).toEqual(3);
+  });
+  test("testing getLifeExpectancy() method, that the lifeExpectancy constructor is is 78 if the smoker constructor is false", () => {
+    forty.getlifeExpectancy();
+    expect(forty.lifeExpectancy).toEqual(78);
   });
 });
